@@ -7,6 +7,8 @@ your elements on page. You can use this if you want to create responsive layout
 for your content.
 It uses CSS `grid` feature, hence the name of this package (if I can call it package).
 
+---
+
 ### Why `grid` and not `flex`?
 
 `Grid` is a really powerfull feature in CSS and it should be used for creating
@@ -19,6 +21,8 @@ You can see support for `grid` on [caniuse.com](https://caniuse.com/?search=grid
 
 Content automatically scales, and all columns will be stacked,
 one above another, when viewing on smaller devices.
+
+---
 
 ### What is `scss` file for?
 
