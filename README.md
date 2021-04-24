@@ -51,6 +51,6 @@ You can find all `css` files in `css` directory in the root of this project.
 
 ### ToDo
 
-- [] Add features in README
-- [] Create simple landing page for this repo
-- [] Add more examples
+- [ ] Add features in README
+- [ ] Create simple landing page for this repo
+- [ ] Add more examples
