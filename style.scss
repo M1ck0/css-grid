@@ -12,10 +12,6 @@ $content-width: 1340px;
   @return $result;
 }
 
-@function handle-gap($number) {
-  @return $number;
-}
-
 // Main code
 .grid {
   max-width: $content-width;
@@ -40,7 +36,7 @@ $content-width: 1340px;
   $gap-var: 0;
   @while $gap-var <= 50 {
     &[grid-gap^="#{$gap-var}"] {
-      grid-gap: handle-gap($gap-var) + px;
+      grid-gap: $gap-var + px;
     }
     $gap-var: $gap-var + 5;
   }
