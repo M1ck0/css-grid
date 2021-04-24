@@ -46,3 +46,11 @@ After you're done, command `npm run build` compiles `style.scss` to `css-grid.mi
 empty lines and comments for a smaller file size. You will also get `css-grid.min.css.map` which will help you in debugging `css`.
 
 You can find all `css` files in `css` directory in the root of this project.
+
+---
+
+### ToDo
+
+- [] Add features in README
+- [] Create simple landing page for this repo
+- [] Add more examples
