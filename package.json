@@ -1,0 +1,16 @@
+{
+  "name": "scss-boilerplate",
+  "version": "0.1.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass ./style.scss ./css/css-grid.css -w",
+    "build": "sass ./style.scss ./css/minifed/css-grid.min.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "sass": "^1.32.11"
+  }
+}
