@@ -2,6 +2,21 @@
 
 $content-width: 1340px;
 
+// Functions
+@function handle-columns($number) {
+  $result: repeat(
+    auto-fill,
+    minmax(calc(#{$content-width}/ #{$number + 1}), 1fr)
+  );
+
+  @return $result;
+}
+
+@function handle-gap($number) {
+  @return $number;
+}
+
+// Main code
 .grid {
   max-width: $content-width;
   padding: 0 20px;
@@ -12,60 +27,22 @@ $content-width: 1340px;
     minmax(calc(#{$content-width}/ 3), 1fr)
   );
 
-  &[grid-layout="3"] {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(#{$content-width}/ 4), 1fr)
-    );
+  @media screen and (max-width: calc(1440px / 4)) {
+    grid-template-columns: 1fr;
+  }
 
-    @media screen and (max-width: calc(1440px / 4)) {
-      grid-template-columns: 1fr;
+  @for $i from 1 through 10 {
+    &[grid-layout^="#{$i}"] {
+      grid-template-columns: handle-columns($i + 1);
     }
   }
 
-  &[grid-layout="4"] {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(#{$content-width}/ 5), 1fr)
-    );
-
-    @media screen and (max-width: calc(1440px / 5)) {
-      grid-template-columns: 1fr;
+  $gap-var: 0;
+  @while $gap-var <= 50 {
+    &[grid-gap^="#{$gap-var}"] {
+      grid-gap: handle-gap($gap-var) + px;
     }
-  }
-
-  &[grid-layout="5"] {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(#{$content-width}/ 6), 1fr)
-    );
-
-    @media screen and (max-width: calc(1440px / 6 )) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &[grid-layout="6"] {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(#{$content-width}/ 7), 1fr)
-    );
-
-    @media screen and (max-width: calc(1440px / 7)) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &[grid-gap^="1"] {
-    grid-gap: 10px;
-  }
-
-  &[grid-gap^="2"] {
-    grid-gap: 20px;
-  }
-
-  &[grid-gap^="3"] {
-    grid-gap: 30px;
+    $gap-var: $gap-var + 5;
   }
 
   &[grid-align-items^="center"] {
