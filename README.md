@@ -26,7 +26,7 @@ one above another, when viewing on smaller devices.
 
 ### What is `scss` file for?
 
-I use `scss` to write this code because it gives 'super powers' to `css`, and helps you in writing code faster.
+I use `scss` to write this code because it gives 'super powers' to `css`, and helps me in writing code faster.
 
 If you want to fork this repository and extend it on your own or you want to contribute to this project,
 here are instructions on how to get started with it.
@@ -34,16 +34,16 @@ here are instructions on how to get started with it.
 1. Clone this repo
 2. run `npm install`
 3. run `npm run watch`
-4. edit `style.scss` file
+4. edit `css-grid.scss` file
 5. run `npm run build`
 
 This will install necessary package that is required for compiling `scss` code to pure `css` code.
 
-Command `npm run watch` is used to compile `style.scss` to `css-grid.css`. It is triggered on every
-code in `style.scss` and updates `css-grid.css` with the latest changes so you can include `css-grid.css`
+Command `npm run watch` is used to compile `css-grid.scss` to `css-grid.css`. It is triggered on every
+code in `css-grid.scss` and updates `css-grid.css` with the latest changes so you can include `css-grid.css`
 in your project and see all the changes live.
 
-After you're done, command `npm run build` compiles `style.scss` to `css-grid.min.css` which should be used in production as it strips all spaces,
+After you're done, command `npm run build` compiles `css-grid.scss` to `css-grid.min.css` which should be used in production as it strips all spaces,
 empty lines and comments for a smaller file size. You will also get `css-grid.min.css.map` which will help you in debugging `css`.
 
 You can find all `css` files in `css` directory in the root of this project.
