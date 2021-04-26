@@ -27,28 +27,16 @@ $gap-var: 0;
   );
 
   @for $i from 1 through 12 {
-    &[grid-layout^="#{$i}"] {
+    &[class*="grid-layout-#{$i}"] {
       grid-template-columns: handle-columns($i);
     }
   }
 
   @while $gap-var <= 50 {
-    &[grid-gap^="#{$gap-var}"] {
+    &[class*="grid-gap-#{$gap-var}"] {
       grid-gap: $gap-var + px;
     }
     $gap-var: $gap-var + 5;
-  }
-
-  &[grid-align-items^="center"] {
-    place-items: center;
-  }
-
-  &[grid-align-items^="left"] {
-    place-items: start;
-  }
-
-  &[grid-align-items^="right"] {
-    place-items: end;
   }
 
   & > * {
