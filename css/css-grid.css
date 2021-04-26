@@ -5,43 +5,43 @@
   margin: 0 auto;
   display: grid;
   transform: translateY(5px);
-  grid-template-columns: repeat(auto-fill, minmax(calc(1340px/ 3), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(calc(1340px / 3), 1fr));
 }
 .grid[grid-layout^="1"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/1 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/1 - 20px)), 1fr));
 }
 .grid[grid-layout^="2"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/2 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/2 - 20px)), 1fr));
 }
 .grid[grid-layout^="3"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/3 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/3 - 20px)), 1fr));
 }
 .grid[grid-layout^="4"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/4 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/4 - 20px)), 1fr));
 }
 .grid[grid-layout^="5"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/5 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/5 - 20px)), 1fr));
 }
 .grid[grid-layout^="6"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/6 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/6 - 20px)), 1fr));
 }
 .grid[grid-layout^="7"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/7 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/7 - 20px)), 1fr));
 }
 .grid[grid-layout^="8"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/8 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/8 - 20px)), 1fr));
 }
 .grid[grid-layout^="9"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/9 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/9 - 20px)), 1fr));
 }
 .grid[grid-layout^="10"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/10 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/10 - 20px)), 1fr));
 }
 .grid[grid-layout^="11"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/11 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/11 - 20px)), 1fr));
 }
 .grid[grid-layout^="12"] {
-  grid-template-columns: repeat(auto-fit, minmax(calc(1340px/12 - 20px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(1340px/12 - 20px)), 1fr));
 }
 .grid[grid-gap^="0"] {
   grid-gap: 0px;
