@@ -6,6 +6,7 @@
   display: grid;
   transform: translateY(5px);
   grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(1340px / 3)), 1fr));
+  grid-gap: 10px;
 }
 .grid[class*=grid-layout-1] {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(1340px/2 - 20px)), 1fr));

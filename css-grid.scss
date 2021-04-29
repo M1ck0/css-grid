@@ -25,6 +25,7 @@ $gap-var: 0;
     auto-fill,
     minmax(min(100%, calc(#{$content-width} / 3)), 1fr)
   );
+  grid-gap: 10px;
 
   @for $i from 1 through 12 {
     &[class*="grid-layout-#{$i}"] {
