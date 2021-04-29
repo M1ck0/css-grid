@@ -7,8 +7,8 @@ $gap-var: 0;
 // Functions
 @function handle-columns($number) {
   $result: repeat(
-    auto-fit,
-    minmax(min(100%, calc(#{$content-width}/#{$number} - 20px)), 1fr)
+    auto-fill,
+    minmax(min(100%, calc(#{$content-width}/#{$number + 1} - 20px)), 1fr)
   );
 
   @return $result;
@@ -23,7 +23,7 @@ $gap-var: 0;
   transform: translateY(5px);
   grid-template-columns: repeat(
     auto-fill,
-    minmax(calc(#{$content-width} / 3), 1fr)
+    minmax(min(100%, calc(#{$content-width} / 3)), 1fr)
   );
 
   @for $i from 1 through 12 {
