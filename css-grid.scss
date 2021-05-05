@@ -21,15 +21,7 @@ $gap-var: 20px;
 .grid {
   max-width: $content-width;
   padding: 0 20px;
-  margin: 0 auto $gap-var;
-  //display: grid;
-  //margin: 0 auto $gap-var;
-  //place-items: center;
-  //grid-gap: $gap-var;
-  //grid-template-columns: repeat(
-  //  auto-fill,
-  //  minmax(min(100%, calc(#{$content-width})), 1fr)
-  //);
+  margin: 0 auto;
 
   @for $i from 1 through 12 {
     [class*="grid-layout-#{$i}"] {
@@ -41,6 +33,7 @@ $gap-var: 20px;
     display: grid;
     place-items: center;
     grid-gap: $gap-var;
+    margin-top: $gap-var;
 
     & > * {
       width: 100%; // make sure that all children have initial width set
