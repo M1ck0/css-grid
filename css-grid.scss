@@ -21,24 +21,30 @@ $gap-var: 20px;
 .grid {
   max-width: $content-width;
   padding: 0 20px;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  transform: translateY(5px);
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(min(100%, calc(#{$content-width} / 3)), 1fr)
-  );
-  grid-gap: $gap-var;
+  margin: 0 auto $gap-var;
+  //display: grid;
+  //margin: 0 auto $gap-var;
+  //place-items: center;
+  //grid-gap: $gap-var;
+  //grid-template-columns: repeat(
+  //  auto-fill,
+  //  minmax(min(100%, calc(#{$content-width})), 1fr)
+  //);
 
   @for $i from 1 through 12 {
-    &[class*="grid-layout-#{$i}"] {
+    [class*="grid-layout-#{$i}"] {
       grid-template-columns: handle-columns($i);
     }
   }
 
-  & > * {
-    width: 100%; // make sure that all children have initial width set
-    height: 100px;
+  [class*="grid-layout"] {
+    display: grid;
+    place-items: center;
+    grid-gap: $gap-var;
+
+    & > * {
+      width: 100%; // make sure that all children have initial width set
+      height: 50px;
+    }
   }
 }
