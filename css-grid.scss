@@ -2,16 +2,19 @@
 
 // Variables
 $content-width: 1340px;
-$gap-var: 0;
+$gap-var: 20px;
 
 // Functions
-@function handle-columns($number) {
-  $result: repeat(
-    auto-fill,
-    minmax(min(100%, calc(#{$content-width}/#{$number + 1} - #{$gap-var}px)), 1fr)
+@function handle-columns($columns) {
+  $grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      min(100%, calc(calc(#{$content-width}/#{$columns}) - #{$gap-var})),
+      1fr
+    )
   );
 
-  @return $result;
+  @return $grid-template-columns;
 }
 
 // Main code
@@ -20,12 +23,13 @@ $gap-var: 0;
   padding: 0 20px;
   margin: 0 auto;
   display: grid;
+  place-items: center;
   transform: translateY(5px);
   grid-template-columns: repeat(
     auto-fill,
     minmax(min(100%, calc(#{$content-width} / 3)), 1fr)
   );
-  grid-gap: 10px;
+  grid-gap: $gap-var;
 
   @for $i from 1 through 12 {
     &[class*="grid-layout-#{$i}"] {
@@ -33,14 +37,8 @@ $gap-var: 0;
     }
   }
 
-  @while $gap-var <= 50 {
-    &[class*="grid-gap-#{$gap-var}"] {
-      grid-gap: $gap-var + px;
-    }
-    $gap-var: $gap-var + 5;
-  }
-
   & > * {
-    max-width: 100%; /* make sure that all direct children have max width of 100% so they don't overflow parent */
+    width: 100%; // make sure that all children have initial width set
+    height: 100px;
   }
 }
