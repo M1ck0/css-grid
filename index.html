@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -8,49 +13,236 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-okaidia.min.css"
+      integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/css-grid.css" />
-    <style>
-      .grid-item {
-        background-color: tomato;
-      }
-    </style>
+    <link rel="stylesheet" href="./landing.css" />
   </head>
   <body>
-    <div class="grid">
-      <div class="grid-layout-6">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
-      <div class="grid-layout-4">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
-      <div class="grid-layout-3">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
-      <div class="grid-layout-2">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+    <div class="header">
+      <div class="grid">
+        <div class="grid-layout-2">
+          <div>
+            <h1 class="title">CSS Grid</h1>
+            <p class="subtitle">
+              CSS Grid was created for developers who need a simple grid system
+              for their project. CSS Grid has default width of 1340px. It uses
+              grid feature of CSS, and is fully responsive down to mobile
+              devices, without any media queries.
+            </p>
+            <a href="/" target="_blank" class="github-button">github</a>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="about">
+      <div class="grid">
+        <h2 class="title">About</h2>
+        <div class="grid-layout-1">
+          <p>
+            CSS grid is a simple library that gives you an ability to create
+            responsive layouts without thinking too much about it. It uses grid
+            feature from CSS to create layouts for modern browsers.
+            <br />
+            This is not Bootstrap, Tailwind or something similar. You can't use
+            this to create buttons, cards, modals, etc.
+            <br />
+            <br />
+            For now this library is very small (unminified version has 59 lines
+            of code) but you can create some interesting layouts with it.
+            <br />
+            Soon I'll be adding some presets for layouts. This means that you'll
+            be able to create nice looking galleries and layouts with only one
+            class.
+            <br />
+            <br />
+            I was using Bootstrap for a long time and realized that I mostly use
+            it because I can easily create responsive layouts, which means that
+            other parts of it are unused, so that's why I decided to create
+            this.
+            <br />
+            I wanted to do for myself but then I decided to open-source it
+            because someone might find it useful or even contribute to it.
+            <br />
+            <br />
+            You can read more about grid by clicking
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+              target="_blank"
+              >here</a
+            >
+            <br />
+            You can check support for grid by clicking
+            <a href="https://caniuse.com/?search=grid" target="_blank">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="grid">
+        <div class="demo-header">
+          <h2 class="title">Demo</h2>
+          <div class="grid-layout-1">
+            <p class="subtitle">
+              All items take equal amount of space and they resize with the
+              browser. When there isn't enough space left for the element it
+              will go to the new line, and ensure that all elements are fully
+              visible.
+              <br />
+              <br />
+              To see the effect try resizing your browser.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-layout-12">
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+        </div>
+        <div class="language-markup">
+          <pre><code class="language-html">&lt;div class="grid">
+  &lt;div class="grid-layout-12">
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+        </div>
+        <div class="grid-layout-8">
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+        </div>
+        <div class="language-markup">
+          <pre><code class="language-html">&lt;div class="grid">
+  &lt;div class="grid-layout-8">
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+        </div>
+        <div class="grid-layout-6">
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+        </div>
+        <div class="language-markup">
+          <pre><code class="language-html">&lt;div class="grid">
+  &lt;div class="grid-layout-6">
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+        </div>
+        <div class="grid-layout-4">
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+        </div>
+        <div class="language-markup">
+          <pre><code class="language-html">&lt;div class="grid">
+  &lt;div class="grid-layout-4">
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+        </div>
+        <div class="grid-layout-2">
+          <div class="demo-item">demo</div>
+          <div class="demo-item">demo</div>
+        </div>
+        <div class="language-markup">
+          <pre><code class="language-html">&lt;div class="grid">
+  &lt;div class="grid-layout-2">
+    &lt;div class="demo-item">demo&lt;/div>
+    &lt;div class="demo-item">demo&lt;/div>
+  &lt;/div>
+&lt;/div></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="grid">
+        <h2 class="title">Features</h2>
+        <div class="grid-layout-4 center-items">
+          <div>
+            <div class="item-title">Responsive</div>
+            <p>
+              Built with responsive sites in mind, Simple Grid allows developers
+              to build websites on a foundation suited for mobile and tablet
+              browsers.
+            </p>
+          </div>
+          <div>
+            <div class="item-title">Lightweight</div>
+            <p>
+              Simple Grid is simply that, a grid. This is not a framework with
+              everything from forms to buttons styled but a lightwight simple
+              CSS grid.
+            </p>
+          </div>
+          <div>
+            <div class="item-title">1340px</div>
+            <p>
+              No longer do we develop for 1024px monitors. Simple Grid is
+              designed to make sites look great on larger monitors with higher
+              resolutions.
+            </p>
+          </div>
+          <div>
+            <div class="item-title">12 columns</div>
+            <p>
+              The twelve column structure of Simple Grid easily divides into
+              columns of two, three, four or six, giving developers numerous
+              layout possibilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+      integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

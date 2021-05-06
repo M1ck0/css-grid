@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  min-height: 600px;
+  display: grid;
+  place-items: center;
+  background-image: url("https://i.dlpng.com/static/png/6800687_preview.png");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.header .title {
+  font-size: 42px;
+  position: relative;
+  z-index: 1;
+}
+
+.header .subtitle {
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 150%;
+  position: relative;
+  z-index: 1;
+}
+
+.header .github-button {
+  background-color: rgb(135, 71, 255);
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.header .github-button:hover {
+  background-color: rgb(135, 110, 255);
+}
+
+
+
+
+.features {
+  margin-top: 100px;
+}
+
+.features .title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.features .item-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+
+.demo {
+  margin-top: 100px;
+}
+
+.demo .demo-header .title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.demo .demo-header .subtitle {
+  font-size: 20px;
+}
+
+.demo [class*="columns"] {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.demo .demo-item {
+  height: 50px;
+  background-color: rgb(135, 71, 255);
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.demo .demo-item:hover {
+  background-color: rgb(155, 110, 255);
+}
+
+.demo .language-markup {
+  margin-bottom: 70px;
+}
+
+
+
+.about .title {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+.about p {
+  font-size: 18px;
+}
