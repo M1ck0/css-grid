@@ -2,16 +2,20 @@
 
 ### Intro
 
-CSS Grid is lightweight grid, not a `css` framework. You can't use this to style
-your elements on page. You can use this if you want to create responsive layout
-for your content.
-It uses CSS `grid` feature, hence the name of this package (if I can call it package).
+CSS grid is a simple library that gives you an ability to create responsive layouts without thinking too much about it. It uses grid feature from CSS to create layouts for modern browsers.
+This is not Bootstrap, Tailwind or something similar. You can't use this to create buttons, cards, modals, etc.
+
+For now this library is very small (unminified version has 59 lines of code), but you can create some interesting layouts with it.
+Soon I'll be adding some presets for layouts. This means that you'll be able to create nice looking galleries and layouts with only one class.
+
+I was using Bootstrap for a long time and realized that I mostly use it because I can easily create responsive layouts, which means that other parts of it are unused, so that's why I decided to create this.
+I wanted to do for myself, but then I decided to open-source it because someone might find it useful or even contribute to it.
 
 ---
 
 ### Why `grid` and not `flex`?
 
-`grid` is a really powerfull feature in CSS and it should be used for creating
+`grid` is a really powerful feature in CSS, and it should be used for creating
 page layouts because it takes so much work off your back, especially when it
 comes to responsive layouts.
 
@@ -26,9 +30,9 @@ one above another, when viewing on smaller devices.
 
 ### What is `scss` file for?
 
-I use `scss` to write this code because it gives 'super powers' to `css`, and helps me in writing code faster.
+I use `scss` to write this code because it gives 'superpowers' to `css`, and helps me in writing code faster.
 
-If you want to fork this repository and extend it on your own or you want to contribute to this project,
+If you want to fork this repository and extend it on your own, or you want to contribute to this project,
 here are instructions on how to get started with it.
 
 1. Clone this repo
@@ -40,7 +44,7 @@ here are instructions on how to get started with it.
 This will install necessary package that is required for compiling `scss` code to pure `css` code.
 
 Command `npm run watch` is used to compile `css-grid.scss` to `css-grid.css`. It is triggered on every
-code in `css-grid.scss` and updates `css-grid.css` with the latest changes so you can include `css-grid.css`
+code in `css-grid.scss` and updates `css-grid.css` with the latest changes, so you can include `css-grid.css`
 in your project and see all the changes live.
 
 After you're done, command `npm run build` compiles `css-grid.scss` to `css-grid.min.css` which should be used in production as it strips all spaces,
