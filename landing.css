@@ -12,7 +12,7 @@ body {
   min-height: 600px;
   display: grid;
   place-items: center;
-  background-image: url("https://i.dlpng.com/static/png/6800687_preview.png");
+  background-image: url("assets/landing.png");
   background-size: cover;
   position: relative;
   color: #fff;
